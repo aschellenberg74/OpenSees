@@ -1009,6 +1009,7 @@ MATERIAL_LIBS   =  $(FE)/material/Material.o \
 	$(FE)/material/nD/UWmaterials/J2CyclicBoundingSurfacePlaneStrain.o \
 	$(FE)/material/nD/UWmaterials/PM4Sand.o \
 	$(FE)/material/nD/UWmaterials/PM4Silt.o \
+	$(FE)/material/nD/UWmaterials/LinearElasticGGmax.o \
 	$(FE)/material/nD/UANDESmaterials/SAniSandMS.o \
 	$(FE)/material/nD/UANDESmaterials/SAniSandMS3D.o \
 	$(FE)/material/nD/UANDESmaterials/SAniSandMSPlaneStrain.o \
@@ -1270,7 +1271,9 @@ SequentialSysOfEqn_LIBS =	$(FE)/system_of_eqn/linearSOE/LinearSOE.o \
 	$(FE)/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSOE.o \
 	$(FE)/system_of_eqn/linearSOE/umfGEN/UmfpackGenLinSolver.o \
 	$(FE)/system_of_eqn/eigenSOE/FullGenEigenSOE.o \
-	$(FE)/system_of_eqn/eigenSOE/FullGenEigenSolver.o
+	$(FE)/system_of_eqn/eigenSOE/FullGenEigenSolver.o \
+	$(FE)/system_of_eqn/eigenSOE/SymmGeneralizedEigenSOE.o \
+	$(FE)/system_of_eqn/eigenSOE/SymmGeneralizedEigenSolver.o
 
 ifeq ($(PROGRAMMING_MODE), PARALLEL_INTERPRETERS)
 SysOfEqn_LIBS = $(SequentialSysOfEqn_LIBS) \

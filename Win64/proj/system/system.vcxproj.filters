@@ -47,6 +47,9 @@
     <Filter Include="pardiso">
       <UniqueIdentifier>{723fd79e-0d4a-4e38-8be8-aebeea3e8a24}</UniqueIdentifier>
     </Filter>
+    <Filter Include="symGenEigen">
+      <UniqueIdentifier>{9cf89c87-83a2-44f2-b96b-76f4638f2bf9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\SRC\system_of_eqn\linearSOE\DomainSolver.cpp">
@@ -232,6 +235,12 @@
     <ClCompile Include="..\..\..\SRC\system_of_eqn\linearSOE\sparseGEN\PFEMSolver_Mumps.cpp">
       <Filter>sparseGEN</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSOE.cpp">
+      <Filter>symGenEigen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSolver.cpp">
+      <Filter>symGenEigen</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SRC\system_of_eqn\linearSOE\DomainSolver.h">
@@ -404,6 +413,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\system_of_eqn\linearSOE\sparseGEN\PFEMSolver_Mumps.h">
       <Filter>sparseGEN</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSOE.h">
+      <Filter>symGenEigen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSolver.h">
+      <Filter>symGenEigen</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

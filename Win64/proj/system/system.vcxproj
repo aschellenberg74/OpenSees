@@ -187,6 +187,8 @@
     </BuildLog>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSOE.cpp" />
+    <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSolver.cpp" />
     <ClCompile Include="..\..\..\SRC\system_of_eqn\linearSOE\DomainSolver.cpp" />
     <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\EigenSOE.cpp" />
     <ClCompile Include="..\..\..\SRC\system_of_eqn\eigenSOE\EigenSolver.cpp" />
@@ -250,6 +252,8 @@
     <ClCompile Include="..\..\..\SRC\system_of_eqn\linearSOE\diagonal\DistributedDiagonalSolver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSOE.h" />
+    <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\SymmGeneralizedEigenSolver.h" />
     <ClInclude Include="..\..\..\SRC\system_of_eqn\linearSOE\DomainSolver.h" />
     <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\EigenSOE.h" />
     <ClInclude Include="..\..\..\SRC\system_of_eqn\eigenSOE\EigenSolver.h" />

@@ -1800,7 +1800,7 @@ enum outputMode  {STANDARD_STREAM, DATA_STREAM, XML_STREAM, DATABASE_STREAM, BIN
 
 	 int xLoc, yLoc, width, height;
 	 if (argc < 10) {
-	     opserr << "WARNING recorder display fileName? windowTitle? xLoc yLoc pixelsX pixelsY -columns colX1 colY1 -columns colX2 ...";
+	     opserr << "WARNING recorder plot fileName1? fileName2? windowTitle? xLoc yLoc xPixels yPixels -columns colX1 colY1 -columns colX2 ...";
 	     return TCL_ERROR;
 	 }    
 	 if (Tcl_GetInt(interp, argv[5], &xLoc) != TCL_OK)	
