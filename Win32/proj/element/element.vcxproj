@@ -60,6 +60,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Lib>
       <OutputFile>.\..\..\lib\debug\element.lib</OutputFile>
@@ -88,6 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Lib>
       <OutputFile>.\..\..\lib\release\element.lib</OutputFile>
@@ -170,7 +172,7 @@
     <ClCompile Include="..\..\..\SRC\element\mvlem\SFI_MVLEM.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mvlem\MVLEM_3D.cpp" />
     <ClCompile Include="..\..\..\SRC\element\mvlem\SFI_MVLEM_3D.cpp" />
-	<ClCompile Include="..\..\..\SRC\element\mvlem\E_SFI_MVLEM_3D.cpp" />
+    <ClCompile Include="..\..\..\SRC\element\mvlem\E_SFI_MVLEM_3D.cpp" />
     <ClCompile Include="..\..\..\SRC\element\PFEMElement\BackgroundDef.cpp" />
     <ClCompile Include="..\..\..\SRC\element\PFEMElement\BackgroundMesh.cpp" />
     <ClCompile Include="..\..\..\SRC\element\PFEMElement\HigherOrder.cpp" />
@@ -482,7 +484,7 @@
     <ClInclude Include="..\..\..\SRC\element\mvlem\SFI_MVLEM.h" />
     <ClInclude Include="..\..\..\SRC\element\mvlem\MVLEM_3D.h" />
     <ClInclude Include="..\..\..\SRC\element\mvlem\SFI_MVLEM_3D.h" />
-	<ClInclude Include="..\..\..\SRC\element\mvlem\E_SFI_MVLEM_3D.h" />
+    <ClInclude Include="..\..\..\SRC\element\mvlem\E_SFI_MVLEM_3D.h" />
     <ClInclude Include="..\..\..\SRC\element\PFEMElement\BackgroundDef.h" />
     <ClInclude Include="..\..\..\SRC\element\PFEMElement\BackgroundMesh.h" />
     <ClInclude Include="..\..\..\SRC\element\PFEMElement\HigherOrder.h" />

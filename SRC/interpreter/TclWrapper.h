@@ -27,6 +27,7 @@
 
 #include <tcl.h>
 #include <OPS_Globals.h>
+#include "GenericDict.h"
 
 #include <vector>
 #include <map>
@@ -66,6 +67,7 @@ public:
     void setOutputs(Tcl_Interp* interp, std::vector<std::vector<const char*>>& data);
     void setOutputs(Tcl_Interp* interp, std::map<const char*, const char*>& data);
     void setOutputs(Tcl_Interp* interp, std::map<const char*, std::vector<const char*>>& data);
+    void setGenericDictOutput(Tcl_Interp* interp, GenericDict& data);
 
 private:
 

@@ -60,6 +60,7 @@
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Lib>
       <OutputFile>.\..\..\lib\debug\material.lib</OutputFile>
@@ -88,6 +89,7 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <CompileAs>Default</CompileAs>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Lib>
       <OutputFile>.\..\..\lib\release\material.lib</OutputFile>
@@ -157,8 +159,10 @@
     <ClCompile Include="..\..\..\SRC\material\section\FiberSectionGJThermal.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\FiberSectionWarping3d.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\integration\HSSSectionIntegration.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\integration\RCCircularSectionIntegration.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\integration\RCTunnelSectionIntegration.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\integration\TubeSectionIntegration.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\LayeredMembraneSection\ElasticMembraneSection.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\LayeredMembraneSection\LayeredMembraneSection.cpp" />
@@ -283,7 +287,7 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\KikuchiAikenHDR.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\KikuchiAikenLRB.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\Maxwell.cpp" />
-    <ClCompile Include="..\..\..\Src\material\uniaxial\MinMaxMaterial.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\MinMaxMaterial.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented02.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\ModIMKPinching.cpp" />
@@ -384,15 +388,15 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\drain\DrainPinch1Material.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\drain\TclDrainMaterialCommand.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PyLiq1.cpp" />
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\PySimple1.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\PySimple1.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PySimple1Gen.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PySimple2.cpp" />
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\QzSimple1.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\QzSimple1.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\QzSimple2.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\ShallowFoundationGen.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TclPyTzQzMaterialCommand.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TzLiq1.cpp" />
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\TzSimple1.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\TzSimple1.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TzSimple1Gen.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TzSimple2.cpp" />
     <ClCompile Include="..\..\..\SRC\material\uniaxial\snap\Bilinear.cpp" />
@@ -511,7 +515,7 @@
     <ClCompile Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\ReinforcedConcretePlaneStress.cpp" />
     <ClCompile Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\SteelZ01.cpp" />
     <ClCompile Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\TendonL01.cpp" />
-    <ClCompile Include="..\..\..\Src\material\section\Bidirectional.cpp" />
+    <ClCompile Include="..\..\..\SRC\material\section\Bidirectional.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\ElasticMembranePlateSection.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\ElasticPlateSection.cpp" />
     <ClCompile Include="..\..\..\SRC\material\section\ElasticSection2d.cpp" />
@@ -645,8 +649,10 @@
     <ClInclude Include="..\..\..\SRC\material\section\FiberSectionGJThermal.h" />
     <ClInclude Include="..\..\..\SRC\material\section\FiberSectionWarping3d.h" />
     <ClInclude Include="..\..\..\SRC\material\section\integration\HSSSectionIntegration.h" />
+    <ClInclude Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.h" />
     <ClInclude Include="..\..\..\SRC\material\section\integration\RCCircularSectionIntegration.h" />
     <ClInclude Include="..\..\..\SRC\material\section\integration\RCTunnelSectionIntegration.h" />
+    <ClInclude Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.h" />
     <ClInclude Include="..\..\..\SRC\material\section\integration\TubeSectionIntegration.h" />
     <ClInclude Include="..\..\..\SRC\material\section\LayeredMembraneSection\ElasticMembraneSection.h" />
     <ClInclude Include="..\..\..\SRC\material\section\LayeredMembraneSection\LayeredMembraneSection.h" />
@@ -771,7 +777,7 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\KikuchiAikenHDR.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\KikuchiAikenLRB.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\Maxwell.h" />
-    <ClInclude Include="..\..\..\Src\material\uniaxial\MinMaxMaterial.h" />
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\MinMaxMaterial.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented02.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\ModIMKPinching.h" />
@@ -865,14 +871,14 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\drain\DrainHardeningMaterial.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\drain\DrainPinch1Material.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PyLiq1.h" />
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\PySimple1.h" />
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\PySimple1.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PySimple1Gen.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PySimple2.h" />
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\QzSimple1.h" />
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\QzSimple1.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\QzSimple2.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\ShallowFoundationGen.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\TzLiq1.h" />
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\TzSimple1.h" />
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\TzSimple1.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\TzSimple1Gen.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\TzSimple2.h" />
     <ClInclude Include="..\..\..\SRC\material\uniaxial\snap\Bilinear.h" />
@@ -985,7 +991,7 @@
     <ClInclude Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\ReinforcedConcretePlaneStress.h" />
     <ClInclude Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\SteelZ01.h" />
     <ClInclude Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\TendonL01.h" />
-    <ClInclude Include="..\..\..\Src\material\section\Bidirectional.h" />
+    <ClInclude Include="..\..\..\SRC\material\section\Bidirectional.h" />
     <ClInclude Include="..\..\..\SRC\material\section\ElasticMembranePlateSection.h" />
     <ClInclude Include="..\..\..\SRC\material\section\ElasticPlateSection.h" />
     <ClInclude Include="..\..\..\SRC\material\section\ElasticSection2d.h" />

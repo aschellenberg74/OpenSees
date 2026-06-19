@@ -339,6 +339,12 @@
     <ClCompile Include="..\..\..\SRC\domain\pattern\drm\H5DRMLoadPattern.cpp">
       <Filter>pattern\drm</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\domain\constraints\EQ_Constraint.cpp">
+      <Filter>constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.cpp">
+      <Filter>domain</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SRC\domain\node\NodalLoad.h">
@@ -628,6 +634,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\domain\pattern\drm\H5DRMLoadPattern.h">
       <Filter>pattern\drm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\constraints\EQ_Constraint.h">
+      <Filter>constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\domain\EQ_ConstraintIter.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.h">
+      <Filter>domain</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -110,6 +110,8 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\SRC\domain\component\LoadFactorParameter.cpp" />
+    <ClCompile Include="..\..\..\SRC\domain\constraints\EQ_Constraint.cpp" />
+    <ClCompile Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.cpp" />
     <ClCompile Include="..\..\..\SRC\domain\IGA\gaussQuadrature.cpp" />
     <ClCompile Include="..\..\..\SRC\domain\IGA\IGAFollowerLoad.cpp" />
     <ClCompile Include="..\..\..\SRC\domain\IGA\IGASurfacePatch.cpp" />
@@ -210,6 +212,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SRC\domain\component\LoadFactorParameter.h" />
+    <ClInclude Include="..\..\..\SRC\domain\constraints\EQ_Constraint.h" />
+    <ClInclude Include="..\..\..\SRC\domain\domain\EQ_ConstraintIter.h" />
+    <ClInclude Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.h" />
     <ClInclude Include="..\..\..\SRC\domain\IGA\gaussQuadrature.h" />
     <ClInclude Include="..\..\..\SRC\domain\IGA\IGAFollowerLoad.h" />
     <ClInclude Include="..\..\..\SRC\domain\IGA\IGASurfacePatch.h" />

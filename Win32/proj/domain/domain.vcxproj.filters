@@ -339,6 +339,12 @@
     <ClCompile Include="..\..\..\SRC\domain\load\BeamUniformMoment.cpp">
       <Filter>load\beam</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\domain\constraints\EQ_Constraint.cpp">
+      <Filter>constraints</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.cpp">
+      <Filter>domain</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\SRC\domain\node\NodalLoad.h">
@@ -628,6 +634,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\domain\load\BeamUniformMoment.h">
       <Filter>load\beam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\constraints\EQ_Constraint.h">
+      <Filter>constraints</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\domain\EQ_ConstraintIter.h">
+      <Filter>domain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\domain\domain\single\SingleDomEQ_Iter.h">
+      <Filter>domain</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

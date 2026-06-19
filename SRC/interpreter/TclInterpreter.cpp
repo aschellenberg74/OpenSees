@@ -722,3 +722,11 @@ TclInterpreter::setString(std::map<const char*, std::vector<const char*>>& data)
 
     return 0;
 }
+
+int
+TclInterpreter::setGenericDict(GenericDict& data)
+{
+    wrapper.setGenericDictOutput(interp, data);
+
+    return 0;
+}

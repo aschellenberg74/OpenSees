@@ -268,7 +268,7 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\Maxwell.cpp">
       <Filter>uniaxial</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Src\material\uniaxial\MinMaxMaterial.cpp">
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\MinMaxMaterial.cpp">
       <Filter>uniaxial</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented.cpp">
@@ -439,7 +439,7 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PyLiq1.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\PySimple1.cpp">
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\PySimple1.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PySimple1Gen.cpp">
@@ -448,7 +448,7 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\PySimple2.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\QzSimple1.cpp">
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\QzSimple1.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\QzSimple2.cpp">
@@ -463,7 +463,7 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TzLiq1.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Src\material\uniaxial\Py\TzSimple1.cpp">
+    <ClCompile Include="..\..\..\SRC\material\uniaxial\Py\TzSimple1.cpp">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\uniaxial\PY\TzSimple1Gen.cpp">
@@ -745,7 +745,7 @@
     <ClCompile Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\TendonL01.cpp">
       <Filter>nD\reinforcedConcretePlaneStress</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\Src\material\section\Bidirectional.cpp">
+    <ClCompile Include="..\..\..\SRC\material\section\Bidirectional.cpp">
       <Filter>section</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\section\ElasticMembranePlateSection.cpp">
@@ -1349,6 +1349,9 @@
     <ClCompile Include="..\..\..\SRC\material\nD\UWmaterials\PM4Silt.cpp">
       <Filter>nD\UWmaterials</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.cpp">
+      <Filter>nD\UWmaterials</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\nD\UVCmultiaxial.cpp">
       <Filter>nD</Filter>
     </ClCompile>
@@ -1574,8 +1577,11 @@
     <ClCompile Include="..\..\..\SRC\material\uniaxial\CreepShrinkageACI209.cpp">
       <Filter>uniaxial</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.cpp">
-      <Filter>nD\UWmaterials</Filter>
+    <ClCompile Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.cpp">
+      <Filter>section\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.cpp">
+      <Filter>section\integration</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -1723,7 +1729,7 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\Maxwell.h">
       <Filter>uniaxial</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Src\material\uniaxial\MinMaxMaterial.h">
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\MinMaxMaterial.h">
       <Filter>uniaxial</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\uniaxial\ModIMKPeakOriented.h">
@@ -1882,7 +1888,7 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PyLiq1.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\PySimple1.h">
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\PySimple1.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PySimple1Gen.h">
@@ -1891,7 +1897,7 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\PySimple2.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\QzSimple1.h">
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\QzSimple1.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\QzSimple2.h">
@@ -1903,7 +1909,7 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\TzLiq1.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Src\material\uniaxial\Py\TzSimple1.h">
+    <ClInclude Include="..\..\..\SRC\material\uniaxial\Py\TzSimple1.h">
       <Filter>uniaxial\py_tz_qz</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\uniaxial\PY\TzSimple1Gen.h">
@@ -2167,7 +2173,7 @@
     <ClInclude Include="..\..\..\SRC\material\nD\reinforcedConcretePlaneStress\TendonL01.h">
       <Filter>nD\reinforcedConcretePlaneStress</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\Src\material\section\Bidirectional.h">
+    <ClInclude Include="..\..\..\SRC\material\section\Bidirectional.h">
       <Filter>section</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\section\ElasticMembranePlateSection.h">
@@ -2750,6 +2756,9 @@
     <ClInclude Include="..\..\..\SRC\material\nD\UWmaterials\PM4Silt.h">
       <Filter>nD\UWmaterials</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.h">
+      <Filter>nD\UWmaterials</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\nD\UVCmultiaxial.h">
       <Filter>nD</Filter>
     </ClInclude>
@@ -2975,8 +2984,11 @@
     <ClInclude Include="..\..\..\SRC\material\uniaxial\CreepShrinkageACI209.h">
       <Filter>uniaxial</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.h">
-      <Filter>nD\UWmaterials</Filter>
+    <ClInclude Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.h">
+      <Filter>section\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.h">
+      <Filter>section\integration</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
