@@ -55,6 +55,7 @@ UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 #include <vector>
 #include <map>
+#include "GenericDict.h"
 
 class PythonWrapper
 {
@@ -92,6 +93,7 @@ public:
     void setOutputs(std::vector<std::vector<const char*>> &data);
     void setOutputs(std::map<const char*, const char*>& data);
     void setOutputs(std::map<const char*, std::vector<const char*>>& data);
+    void setGenericDictOutput(GenericDict& data);
     PyObject* getResults();
 
 private:

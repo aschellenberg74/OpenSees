@@ -877,6 +877,12 @@
     <ClCompile Include="..\..\..\SRC\material\section\integration\RCSectionIntegration.cpp">
       <Filter>section\integration</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.cpp">
+      <Filter>section\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.cpp">
+      <Filter>section\integration</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\section\integration\RCTBeamSectionIntegration.cpp">
       <Filter>section\integration</Filter>
     </ClCompile>
@@ -1576,6 +1582,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\SRC\material\uniaxial\TzSandCPT.cpp">
       <Filter>uniaxial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.cpp">
+      <Filter>nD\UWmaterials</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -2962,6 +2971,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\SRC\material\uniaxial\CreepShrinkageACI209.h">
       <Filter>uniaxial</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\material\nD\UWmaterials\LinearElasticGGmax.h">
+      <Filter>nD\UWmaterials</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\material\section\integration\MVLEMSectionIntegration.h">
+      <Filter>section\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SRC\material\section\integration\SFIMVLEMSectionIntegration.h">
+      <Filter>section\integration</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

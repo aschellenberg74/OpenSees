@@ -81,6 +81,7 @@ class PythonModule: public DL_Interpreter
     virtual const char* getString();
     virtual const char* getStringFromAll(char* buffer, int len);
     //virtual int getStringCopy(char **stringPtr);
+    virtual void* getVoidPtr();
     virtual int evalDoubleStringExpression(const char* theExpression, double& current_val);
     virtual void resetInput(int nArgs, int cArg, const char** argv);
     virtual void resetInput(int cArg);
@@ -99,6 +100,7 @@ class PythonModule: public DL_Interpreter
     virtual int setString(std::vector<std::vector<const char*>>& data);
     virtual int setString(std::map<const char*, const char*>& data);
     virtual int setString(std::map<const char*, std::vector<const char*>>& data);
+    virtual int setGenericDict(GenericDict& data);
 
     // methods to run a command in the interpreter
     virtual int runCommand(const char*);

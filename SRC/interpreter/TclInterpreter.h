@@ -83,7 +83,8 @@ class TclInterpreter: public DL_Interpreter
     virtual int setString(std::vector<std::vector<const char*>>& data);
     virtual int setString(std::map<const char*, const char*>& data);
     virtual int setString(std::map<const char*, std::vector<const char*>>& data);
-
+    virtual int setGenericDict(GenericDict& data);
+    
   private:
     Tcl_Obj *resultPtr;
     Tcl_Obj *commandPtr;
